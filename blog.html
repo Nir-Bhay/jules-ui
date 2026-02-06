@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Blog - Physiotherapy Health Clinic</title>
+    <meta name="description" content="Read expert articles on pregnancy care, postnatal recovery, orthopedic health, and wellness tips from Dr. Akanksha Raj.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="font-opensans text-text-primary bg-bg-primary antialiased">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20 md:h-24">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-playfair font-bold text-lg md:text-xl text-text-primary group-hover:text-primary transition-colors">Physiotherapy</span>
+                        <span class="font-montserrat text-xs md:text-sm text-text-secondary tracking-wider">Health Clinic</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">About Us</a>
+                    <div class="relative group">
+                        <a href="services.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors flex items-center gap-1">
+                            Services <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-card rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                            <a href="service-antenatal.html" class="block px-4 py-2 hover:bg-bg-tertiary text-sm">Antenatal Care</a>
+                            <a href="service-postnatal.html" class="block px-4 py-2 hover:bg-bg-tertiary text-sm">Postnatal Recovery</a>
+                            <a href="service-orthopedic.html" class="block px-4 py-2 hover:bg-bg-tertiary text-sm">Orthopedic Care</a>
+                            <a href="services.html" class="block px-4 py-2 hover:bg-bg-tertiary text-sm border-t mt-1">View All Services</a>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="font-montserrat font-medium text-primary hover:text-secondary transition-colors">Blog</a>
+                    <a href="contact.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="tel:08788937598" class="flex items-center gap-2 text-text-primary hover:text-primary transition-colors">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="font-semibold text-sm">087889 37598</span>
+                    </a>
+                    <a href="contact.html" class="bg-cta-gradient text-white px-6 py-2.5 rounded-full font-montserrat font-semibold shadow-button hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Book Appointment
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl text-text-primary">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 flex flex-col pt-24 px-6 md:hidden">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-2xl text-text-primary">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <nav class="flex flex-col gap-6 text-center">
+                <a href="index.html" class="text-xl font-medium">Home</a>
+                <a href="about.html" class="text-xl font-medium">About Us</a>
+                <a href="services.html" class="text-xl font-medium text-primary">Services</a>
+                <a href="service-antenatal.html" class="text-lg text-text-secondary">Antenatal Care</a>
+                <a href="service-postnatal.html" class="text-lg text-text-secondary">Postnatal Recovery</a>
+                <a href="service-orthopedic.html" class="text-lg text-text-secondary">Orthopedic Care</a>
+                <a href="blog.html" class="text-xl font-medium">Blog</a>
+                <a href="contact.html" class="text-xl font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-bg-tertiary pt-32 pb-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Health & Wellness Blog</h1>
+            <p class="text-text-secondary max-w-2xl mx-auto">Expert insights, tips, and guides from Dr. Akanksha Raj on pregnancy, recovery, and living pain-free.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+
+            <!-- Category Filter (Visual Only) -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-2 rounded-full bg-primary text-white font-semibold shadow-sm">All</button>
+                <button class="px-6 py-2 rounded-full bg-white border border-gray-200 text-text-secondary hover:border-primary hover:text-primary transition-colors">Pregnancy</button>
+                <button class="px-6 py-2 rounded-full bg-white border border-gray-200 text-text-secondary hover:border-primary hover:text-primary transition-colors">Postnatal</button>
+                <button class="px-6 py-2 rounded-full bg-white border border-gray-200 text-text-secondary hover:border-primary hover:text-primary transition-colors">Orthopedic</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Article 1 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-card hover:-translate-y-2 transition-transform duration-300 fade-up">
+                    <img src="https://images.unsplash.com/photo-1544126566-474438993869?auto=format&fit=crop&q=80&w=800" alt="Pregnancy Exercises" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-secondary text-xs font-bold uppercase tracking-wider mb-2 block">Pregnancy</span>
+                        <h3 class="text-xl font-bold font-playfair mb-3"><a href="#" class="hover:text-primary">5 Safe Exercises During Pregnancy: A Guide</a></h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Staying active is crucial for a healthy pregnancy. Discover the best exercises for each trimester to keep you and your baby healthy.</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">Read Article</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-card hover:-translate-y-2 transition-transform duration-300 fade-up" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800" alt="Back Pain" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-secondary text-xs font-bold uppercase tracking-wider mb-2 block">Orthopedic</span>
+                        <h3 class="text-xl font-bold font-playfair mb-3"><a href="#" class="hover:text-primary">Managing Back Pain During Pregnancy</a></h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Back pain is a common complaint among expectant mothers. Learn why it happens and how specialized physiotherapy can help.</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">Read Article</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-card hover:-translate-y-2 transition-transform duration-300 fade-up" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df4?auto=format&fit=crop&q=80&w=800" alt="Postnatal Recovery" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-secondary text-xs font-bold uppercase tracking-wider mb-2 block">Postnatal</span>
+                        <h3 class="text-xl font-bold font-playfair mb-3"><a href="#" class="hover:text-primary">Diastasis Recti: What You Need to Know</a></h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Understanding abdominal separation after childbirth. How to check for it and the right exercises to fix it safely.</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">Read Article</a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-card hover:-translate-y-2 transition-transform duration-300 fade-up">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800" alt="Stretching" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-secondary text-xs font-bold uppercase tracking-wider mb-2 block">Wellness</span>
+                        <h3 class="text-xl font-bold font-playfair mb-3"><a href="#" class="hover:text-primary">Simple Stretches for Desk Workers</a></h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Sitting all day? These simple stretches can help prevent neck and back pain and improve your posture at work.</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">Read Article</a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-card hover:-translate-y-2 transition-transform duration-300 fade-up" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800" alt="Knee Pain" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-secondary text-xs font-bold uppercase tracking-wider mb-2 block">Orthopedic</span>
+                        <h3 class="text-xl font-bold font-playfair mb-3"><a href="#" class="hover:text-primary">Understanding Knee Pain</a></h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">When to ice, when to heat, and when to see a physiotherapist. A complete guide to managing knee discomfort.</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">Read Article</a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-card hover:-translate-y-2 transition-transform duration-300 fade-up" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1544126566-474438993869?auto=format&fit=crop&q=80&w=800" alt="Mental Health" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-secondary text-xs font-bold uppercase tracking-wider mb-2 block">Wellness</span>
+                        <h3 class="text-xl font-bold font-playfair mb-3"><a href="#" class="hover:text-primary">Physical Health & Mental Well-being</a></h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Exploring the strong connection between your body and mind, and how physiotherapy can support emotional balance.</p>
+                        <a href="#" class="text-primary font-semibold text-sm hover:underline">Read Article</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div>
+                            <span class="font-playfair font-bold text-lg">Physiotherapy</span><br>
+                            <span class="text-xs tracking-wider opacity-80">Health Clinic</span>
+                        </div>
+                    </div>
+                    <p class="text-sm opacity-80 leading-relaxed mb-6">
+                        Expert physiotherapy care specializing in antenatal, postnatal, and orthopedic rehabilitation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 opacity-80 text-sm">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Our Services</h4>
+                    <ul class="space-y-3 opacity-80 text-sm">
+                        <li><a href="service-antenatal.html" class="hover:text-secondary transition-colors">Antenatal Care</a></li>
+                        <li><a href="service-postnatal.html" class="hover:text-secondary transition-colors">Postnatal Recovery</a></li>
+                        <li><a href="service-orthopedic.html" class="hover:text-secondary transition-colors">Orthopedic Physiotherapy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4 opacity-80 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <span>Shop no. G-6, Atlantic Arcade, beside D-Mart, Katara Hills, Bhopal 462043</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:08788937598">087889 37598</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60">
+                <p>&copy; 2024 Physiotherapy Health Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/918788937598" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>

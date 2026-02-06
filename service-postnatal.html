@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postnatal Recovery - Physiotherapy Health Clinic</title>
+    <meta name="description" content="Expert postnatal recovery physiotherapy in Bhopal. Diastasis recti treatment, pelvic floor rehab, and core strengthening for new mothers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="font-opensans text-text-primary bg-bg-primary antialiased">
+
+    <!-- Header (Same as Antenatal) -->
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20 md:h-24">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-playfair font-bold text-lg md:text-xl text-text-primary group-hover:text-primary transition-colors">Physiotherapy</span>
+                        <span class="font-montserrat text-xs md:text-sm text-text-secondary tracking-wider">Health Clinic</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">About Us</a>
+                    <div class="relative group">
+                        <a href="services.html" class="font-montserrat font-medium text-primary hover:text-secondary transition-colors flex items-center gap-1">
+                            Services <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-card rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                            <a href="service-antenatal.html" class="block px-4 py-2 hover:bg-bg-tertiary text-sm">Antenatal Care</a>
+                            <a href="service-postnatal.html" class="block px-4 py-2 hover:bg-bg-tertiary text-sm text-primary font-medium">Postnatal Recovery</a>
+                            <a href="service-orthopedic.html" class="block px-4 py-2 hover:bg-bg-tertiary text-sm">Orthopedic Care</a>
+                            <a href="services.html" class="block px-4 py-2 hover:bg-bg-tertiary text-sm border-t mt-1">View All Services</a>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">Blog</a>
+                    <a href="contact.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="tel:08788937598" class="flex items-center gap-2 text-text-primary hover:text-primary transition-colors">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="font-semibold text-sm">087889 37598</span>
+                    </a>
+                    <a href="contact.html" class="bg-cta-gradient text-white px-6 py-2.5 rounded-full font-montserrat font-semibold shadow-button hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Book Appointment
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl text-text-primary">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 flex flex-col pt-24 px-6 md:hidden">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-2xl text-text-primary">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <nav class="flex flex-col gap-6 text-center">
+                <a href="index.html" class="text-xl font-medium">Home</a>
+                <a href="about.html" class="text-xl font-medium">About Us</a>
+                <a href="services.html" class="text-xl font-medium text-primary">Services</a>
+                <a href="service-antenatal.html" class="text-lg text-text-secondary">Antenatal Care</a>
+                <a href="service-postnatal.html" class="text-lg text-text-secondary">Postnatal Recovery</a>
+                <a href="service-orthopedic.html" class="text-lg text-text-secondary">Orthopedic Care</a>
+                <a href="blog.html" class="text-xl font-medium">Blog</a>
+                <a href="contact.html" class="text-xl font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative pt-32 pb-20 bg-bg-tertiary overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 fade-up">
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Services</span>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Postnatal Recovery & Wellness</h1>
+                    <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                        Restore your core, rebuild strength, and regain confidence after delivery. A comprehensive recovery program for your physical and emotional well-being.
+                    </p>
+                    <a href="contact.html" class="btn-primary">Start Recovery</a>
+                </div>
+                <div class="lg:w-1/2 fade-up" style="transition-delay: 0.2s;">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df4?auto=format&fit=crop&q=80&w=800" alt="Postnatal Mother and Baby" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description & Benefits -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Reclaim Your Strength</h2>
+                <p class="text-text-secondary mb-8 leading-relaxed">
+                    The postpartum period requires special attention to help new mothers recover and regain their strength. Dr. Akanksha Raj's postnatal recovery program addresses the unique needs of women after delivery, focusing on physical recovery, core strengthening, and emotional wellness. Whether you had a natural birth or C-section, our personalized approach ensures a safe return to fitness.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-bg-tertiary p-6 rounded-xl fade-up">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-ribbon text-secondary"></i> Diastasis Recti</h3>
+                        <p class="text-sm text-text-secondary">Specialized exercises to heal abdominal separation and flatten the tummy safely.</p>
+                    </div>
+                    <div class="bg-bg-tertiary p-6 rounded-xl fade-up" style="transition-delay: 0.1s;">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-venus text-secondary"></i> Pelvic Floor</h3>
+                        <p class="text-sm text-text-secondary">Rehabilitation to prevent incontinence and strengthen pelvic muscles.</p>
+                    </div>
+                    <div class="bg-bg-tertiary p-6 rounded-xl fade-up" style="transition-delay: 0.2s;">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-dumbbell text-secondary"></i> Core Strength</h3>
+                        <p class="text-sm text-text-secondary">Gradual progression to rebuild deep core strength and spinal stability.</p>
+                    </div>
+                    <div class="bg-bg-tertiary p-6 rounded-xl fade-up" style="transition-delay: 0.3s;">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-heart text-secondary"></i> Emotional Wellness</h3>
+                        <p class="text-sm text-text-secondary">Support for emotional fitness and mental well-being during the transition to motherhood.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-6">Recovery Timeline</h3>
+                <div class="space-y-6 relative border-l-2 border-primary/20 ml-4 pl-8 mb-16">
+                    <div class="relative fade-up">
+                        <span class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-primary border-4 border-white"></span>
+                        <h4 class="font-bold text-lg mb-2">Weeks 0-6 (Healing Phase)</h4>
+                        <p class="text-text-secondary text-sm">Focus on rest, gentle breathing, and pelvic floor activation. Pain management for C-section scars.</p>
+                    </div>
+                    <div class="relative fade-up">
+                        <span class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-primary border-4 border-white"></span>
+                        <h4 class="font-bold text-lg mb-2">Weeks 6-12 (Foundation)</h4>
+                        <p class="text-text-secondary text-sm">Introduction of gentle core exercises, diastasis recti correction, and posture improvement.</p>
+                    </div>
+                    <div class="relative fade-up">
+                        <span class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-primary border-4 border-white"></span>
+                        <h4 class="font-bold text-lg mb-2">Week 12+ (Strengthening)</h4>
+                        <p class="text-text-secondary text-sm">Progressive strengthening, functional movements, and safe return to regular exercise or sports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding bg-bg-secondary">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">When can I start exercising after delivery?</h4>
+                    <p class="text-text-secondary text-sm">For normal delivery, you can start gentle pelvic floor exercises within days. For C-section, wait 6-8 weeks for more active exercise, but consult us early for safe recovery guidelines.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">What is Diastasis Recti?</h4>
+                    <p class="text-text-secondary text-sm">It is the separation of the abdominal muscles during pregnancy. If not treated, it can lead to a 'pooch' tummy and back pain. We provide specific exercises to close this gap.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">Do you help with C-section recovery?</h4>
+                    <p class="text-text-secondary text-sm">Yes, we specialize in scar tissue mobilization and safe exercises that protect your incision while rebuilding strength.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-primary text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Your Body Needs Care Too</h2>
+            <p class="mb-8 opacity-90 max-w-2xl mx-auto">Invest in your recovery so you can be the best version of yourself for your baby.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-bg-tertiary transition-colors">Book Assessment</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Antenatal) -->
+    <footer class="bg-primary-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div>
+                            <span class="font-playfair font-bold text-lg">Physiotherapy</span><br>
+                            <span class="text-xs tracking-wider opacity-80">Health Clinic</span>
+                        </div>
+                    </div>
+                    <p class="text-sm opacity-80 leading-relaxed mb-6">
+                        Expert physiotherapy care specializing in antenatal, postnatal, and orthopedic rehabilitation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 opacity-80 text-sm">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Our Services</h4>
+                    <ul class="space-y-3 opacity-80 text-sm">
+                        <li><a href="service-antenatal.html" class="hover:text-secondary transition-colors">Antenatal Care</a></li>
+                        <li><a href="service-postnatal.html" class="hover:text-secondary transition-colors">Postnatal Recovery</a></li>
+                        <li><a href="service-orthopedic.html" class="hover:text-secondary transition-colors">Orthopedic Physiotherapy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4 opacity-80 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <span>Shop no. G-6, Atlantic Arcade, beside D-Mart, Katara Hills, Bhopal 462043</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:08788937598">087889 37598</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60">
+                <p>&copy; 2024 Physiotherapy Health Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/918788937598" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
