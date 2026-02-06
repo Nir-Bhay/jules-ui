@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Physiotherapy Health Clinic</title>
+    <meta name="description" content="Comprehensive physiotherapy services in Bhopal: Antenatal care, Postnatal recovery, Orthopedic treatment, Manual therapy, and Pain management.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="font-opensans text-text-primary bg-bg-primary antialiased">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20 md:h-24">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-playfair font-bold text-lg md:text-xl text-text-primary group-hover:text-primary transition-colors">Physiotherapy</span>
+                        <span class="font-montserrat text-xs md:text-sm text-text-secondary tracking-wider">Health Clinic</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">About Us</a>
+                    <div class="relative group">
+                        <a href="services.html" class="font-montserrat font-medium text-primary hover:text-secondary transition-colors flex items-center gap-1">
+                            Services <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-card rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                            <a href="services.html#antenatal" class="block px-4 py-2 hover:bg-bg-tertiary text-sm">Antenatal Care</a>
+                            <a href="services.html#postnatal" class="block px-4 py-2 hover:bg-bg-tertiary text-sm">Postnatal Recovery</a>
+                            <a href="services.html#orthopedic" class="block px-4 py-2 hover:bg-bg-tertiary text-sm">Orthopedic Care</a>
+                        </div>
+                    </div>
+                    <a href="index.html#gallery" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">Gallery</a>
+                    <a href="contact.html" class="font-montserrat font-medium text-text-primary hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="tel:08788937598" class="flex items-center gap-2 text-text-primary hover:text-primary transition-colors">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="font-semibold text-sm">087889 37598</span>
+                    </a>
+                    <a href="contact.html" class="bg-cta-gradient text-white px-6 py-2.5 rounded-full font-montserrat font-semibold shadow-button hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Book Appointment
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl text-text-primary">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 flex flex-col pt-24 px-6 md:hidden">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-2xl text-text-primary">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <nav class="flex flex-col gap-6 text-center">
+                <a href="index.html" class="text-xl font-medium">Home</a>
+                <a href="about.html" class="text-xl font-medium">About Us</a>
+                <a href="services.html" class="text-xl font-medium">Services</a>
+                <a href="index.html#gallery" class="text-xl font-medium">Gallery</a>
+                <a href="contact.html" class="text-xl font-medium">Contact</a>
+            </nav>
+            <div class="mt-8 flex flex-col gap-4">
+                <a href="contact.html" class="bg-cta-gradient text-white py-3 rounded-lg text-center font-semibold shadow-md">Book Appointment</a>
+                <a href="tel:08788937598" class="flex items-center justify-center gap-2 text-primary font-semibold border-2 border-primary py-3 rounded-lg">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-bg-tertiary pt-32 pb-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+            <p class="text-text-secondary"><a href="index.html" class="hover:text-primary">Home</a> <i class="fa-solid fa-chevron-right text-xs mx-2"></i> Services</p>
+        </div>
+    </section>
+
+    <div class="space-y-20 py-20">
+
+        <!-- Antenatal -->
+        <section id="antenatal" class="container mx-auto px-4 scroll-mt-28">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2 fade-up">
+                    <div class="relative rounded-2xl overflow-hidden shadow-card">
+                        <img src="https://images.unsplash.com/photo-1544126566-474438993869?auto=format&fit=crop&q=80&w=800" alt="Antenatal Care" class="w-full h-auto">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
+                            <h3 class="text-white font-bold text-xl">Pregnancy Wellness</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 fade-up">
+                    <div class="inline-block p-3 rounded-full bg-bg-tertiary text-primary text-2xl mb-4">
+                        <i class="fa-solid fa-person-pregnant"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">Antenatal Care</h2>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Pregnancy is a beautiful journey that comes with its own set of physical challenges. Our antenatal care program is designed to support expectant mothers through every stage of pregnancy.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-success"></i>
+                            <span>Safe exercise programs tailored to each trimester</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-success"></i>
+                            <span>Pain management for back and pelvic pain</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-success"></i>
+                            <span>Breathing and relaxation techniques for labor</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn-primary inline-block py-3 px-6 text-sm">Book Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Postnatal -->
+        <section id="postnatal" class="bg-bg-tertiary py-20 scroll-mt-28">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+                    <div class="md:w-1/2 fade-up">
+                        <div class="relative rounded-2xl overflow-hidden shadow-card">
+                            <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df4?auto=format&fit=crop&q=80&w=800" alt="Postnatal Recovery" class="w-full h-auto">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 fade-up">
+                        <div class="inline-block p-3 rounded-full bg-white text-primary text-2xl mb-4">
+                            <i class="fa-solid fa-baby-carriage"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4">Postnatal Recovery</h2>
+                        <p class="text-text-secondary mb-6 leading-relaxed">
+                            The postpartum period requires special attention to help new mothers recover and regain their strength. Our comprehensive program addresses the unique needs of women after delivery.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-success"></i>
+                                <span>Diastasis recti assessment and treatment</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-success"></i>
+                                <span>Pelvic floor rehabilitation</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-success"></i>
+                                <span>Core strengthening and return to fitness</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary inline-block py-3 px-6 text-sm">Start Recovery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Orthopedic -->
+        <section id="orthopedic" class="container mx-auto px-4 scroll-mt-28">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2 fade-up">
+                    <div class="relative rounded-2xl overflow-hidden shadow-card">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800" alt="Orthopedic Care" class="w-full h-auto">
+                    </div>
+                </div>
+                <div class="md:w-1/2 fade-up">
+                    <div class="inline-block p-3 rounded-full bg-bg-tertiary text-primary text-2xl mb-4">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">Orthopedic Physiotherapy</h2>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        With extensive experience in orthopedic care, Dr. Akanksha provides expert treatment for musculoskeletal conditions. Whether chronic pain or injury recovery, we have you covered.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-success"></i>
+                            <span>Back, neck, and joint pain treatment</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-success"></i>
+                            <span>Post-surgical rehabilitation</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-success"></i>
+                            <span>Sports injury management</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn-primary inline-block py-3 px-6 text-sm">Get Relief Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manual Therapy -->
+        <section id="manual" class="bg-bg-tertiary py-20 scroll-mt-28">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+                    <div class="md:w-1/2 fade-up">
+                        <div class="relative rounded-2xl overflow-hidden shadow-card">
+                            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80&w=800" alt="Manual Therapy" class="w-full h-auto">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 fade-up">
+                        <div class="inline-block p-3 rounded-full bg-white text-primary text-2xl mb-4">
+                            <i class="fa-solid fa-hands-holding-circle"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4">Manual Therapy</h2>
+                        <p class="text-text-secondary mb-6 leading-relaxed">
+                            Hands-on techniques to diagnose and treat soft tissue and joint conditions. Our manual therapy services are designed to restore movement and reduce pain.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-bold mb-1">Trigger Point</h4>
+                                <p class="text-xs text-text-secondary">Release tight muscle knots</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-bold mb-1">Taping</h4>
+                                <p class="text-xs text-text-secondary">Support and stability</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-bold mb-1">Mobilization</h4>
+                                <p class="text-xs text-text-secondary">Improve joint range</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h4 class="font-bold mb-1">Myofascial</h4>
+                                <p class="text-xs text-text-secondary">Soft tissue release</p>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn-primary inline-block py-3 px-6 text-sm">Book Session</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div>
+                            <span class="font-playfair font-bold text-lg">Physiotherapy</span><br>
+                            <span class="text-xs tracking-wider opacity-80">Health Clinic</span>
+                        </div>
+                    </div>
+                    <p class="text-sm opacity-80 leading-relaxed mb-6">
+                        Expert physiotherapy care specializing in antenatal, postnatal, and orthopedic rehabilitation.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 opacity-80 text-sm">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors">Services</a></li>
+                        <li><a href="index.html#gallery" class="hover:text-secondary transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Our Services</h4>
+                    <ul class="space-y-3 opacity-80 text-sm">
+                        <li><a href="services.html#antenatal" class="hover:text-secondary transition-colors">Antenatal Care</a></li>
+                        <li><a href="services.html#postnatal" class="hover:text-secondary transition-colors">Postnatal Recovery</a></li>
+                        <li><a href="services.html#orthopedic" class="hover:text-secondary transition-colors">Orthopedic Physiotherapy</a></li>
+                        <li><a href="services.html#manual" class="hover:text-secondary transition-colors">Manual Therapy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4 opacity-80 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <span>Shop no. G-6, Atlantic Arcade, beside D-Mart, Katara Hills, Bhopal 462043</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:08788937598">087889 37598</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Open Daily till 9 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60">
+                <p>&copy; 2024 Physiotherapy Health Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/918788937598" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+node_modules/
+__pycache__/
+*.png
+*.log
+verification_output.txt
