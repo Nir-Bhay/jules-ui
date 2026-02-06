@@ -29,20 +29,17 @@ The site is built with **HTML5**, **Tailwind CSS**, and **Vanilla JavaScript**, 
 
 ```
 ├── dist/
-│   └── output.css          # Compiled CSS (Production ready)
+│   └── output.css      # Compiled CSS (Production ready)
 ├── src/
-│   └── input.css           # Source CSS with Tailwind directives
-├── verification/           # Verification files
-├── about.html              # About Us page
-├── contact.html            # Contact page
-├── index.html              # Homepage
-├── services.html           # Detailed Services page
-├── script.js               # Main JavaScript file
-├── package.json            # Project dependencies and scripts
-├── package-lock.json       # Dependency lock file
-├── tailwind.config.js      # Tailwind configuration (colors, fonts, theme)
-├── server.log              # Server log file
-└── README.md               # Project documentation
+│   └── input.css       # Source CSS with Tailwind directives
+├── about.html          # About Us page
+├── contact.html        # Contact page
+├── index.html          # Homepage
+├── services.html       # Detailed Services page
+├── script.js           # Main JavaScript file
+├── package.json        # Project dependencies and scripts
+├── tailwind.config.js  # Tailwind configuration (colors, fonts, theme)
+└── README.md           # Project documentation
 ```
 
 ## 🚀 Getting Started
